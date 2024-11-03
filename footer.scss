@@ -1,0 +1,115 @@
+
+footer {
+    background-color: $gray-darkest;
+    padding: 56px 0px 80px 0px;
+    border-top: 1px solid rgba($gray-dark, 0.3);
+    .footer-address-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img {
+            margin-bottom: 14px;
+        }
+        p, span {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 160%;
+            letter-spacing: 0.03em;
+            color: $gray-dark;
+            display: block;
+        }
+        span {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        p {
+            max-width: 176px;
+        }
+    }
+    .col-md-5 {
+        justify-content: space-between;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        div {
+            display: flex;
+            align-items: center;
+            
+            a {
+                display: flex;
+                margin-right: 16px;
+                color: $brand-green;
+                transition: 0.4s;
+                &:hover {
+                        transition: 0.4s;
+                        color: $gray-lightest;
+                        transform: translateY(-4px);
+                }
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+            p {
+                font-family: $inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: $gray-dark;
+                margin-right: 20px;
+            }
+        }
+    }
+    h3 {
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F7F7F7;
+        margin-bottom: 18px;
+    }
+    nav {
+        ul {
+            li {
+                margin-bottom: 16px;
+                a {
+                    width: fit-content;
+                    width: -moz-fit-content;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        left: 0px;
+                        bottom: 0px;
+                        height: 1px;
+                        width: 0%;
+                        background-color: rgba($gray-dark, 1);
+                        content: '';
+                        transition: 0.4s;
+                    }
+                    &:hover {
+                        color: $gray-dark;
+                        &::before {
+                            width: 100%;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+ 
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                a {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: $gray-dark;
+                }
+            }
+        }
+    }
+}
